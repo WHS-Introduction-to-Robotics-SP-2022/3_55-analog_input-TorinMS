@@ -1,0 +1,13 @@
+int inPin = A0;
+int val;
+
+void setup()
+{
+   Serial.begin(9600);
+}
+
+void loop()
+{
+    Serial.println(analogRead(inPin),HEX);
+    delay(250);
+}
